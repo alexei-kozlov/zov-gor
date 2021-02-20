@@ -217,6 +217,9 @@ a {
   min-height: 65px;
   background-color: #272625;
 }
+.header--dark-bg {
+  background-color: #272625;
+}
 .header .container {
   padding: 0 20px;
 }
@@ -283,7 +286,7 @@ a {
 }
 
 .nav {
-  z-index: 6;
+  z-index: 5;
   width: 100%;
   min-height: 100px;
   display: flex;
@@ -377,7 +380,7 @@ a {
     position: fixed;
     margin: 0;
     padding: 95px 50px 20px;
-    top: 3px;
+    top: 68px;
     left: 0;
     right: 0;
     width: 100vw;

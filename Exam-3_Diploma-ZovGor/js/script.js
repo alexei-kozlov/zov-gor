@@ -14,6 +14,7 @@
       $('.nav__btn-icon').toggleClass('nav__btn-icon--active');
       $('.nav__list').slideToggle(300).css('display', 'flex');
       $(this).fadeTo(100, .5).fadeTo(100, 1);
+      $('.header').addClass('header--dark-bg');
     });
 
     // Toggle mobile-menu after choose menu-item
