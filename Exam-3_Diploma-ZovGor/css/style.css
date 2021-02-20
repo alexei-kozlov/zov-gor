@@ -250,6 +250,13 @@ a {
     }
   }*/
 }
+@media screen and (max-width: 700px) {
+  .header__logo {
+    min-width: 141px;
+    height: 40px;
+    background-image: url("../img/mobile-logo.svg");
+  }
+}
 .header__logo--sticky {
   min-width: 40px;
   height: 35px;

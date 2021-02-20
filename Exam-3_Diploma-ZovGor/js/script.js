@@ -14,7 +14,6 @@
       $('.nav__btn-icon').toggleClass('nav__btn-icon--active');
       $('.nav__list').slideToggle(300).css('display', 'flex');
       $('.header').toggleClass('header--dark-bg');
-      // $(window).unbind('scroll');
     });
 
     // Toggle mobile-menu after choose menu-item
@@ -101,13 +100,10 @@
       }
 
       if (window.matchMedia('(max-width: 768px)').matches) {
-        // $('body').css('background', '#222');
-        // $('strong').css('color', 'tomato');
         $('.route__main').prepend($('.route__sidebar-main'));
         $('.route__main').append($('.route__sidebar-bottom'));
         $('.route__sidebar').hide();
       } else {
-        // $('body, strong').removeAttr('style');
         $('.route__sidebar').show();
         $('.route__sidebar').prepend($('.route__sidebar-main'));
         $('.route__sidebar').append($('.route__sidebar-bottom'));
@@ -121,12 +117,10 @@
     let regex = {
       email: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     }
-
     function validateField(val, fieldName) {
       let pattern = regex[fieldName];
       return pattern.test(val);
     }
-
     $('#form').on('submit', function (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -197,7 +191,7 @@ const thermalSprings = {lat: 43.38359927774014, lng: 42.36117805779969};
 
 // const marker = 'img/map-marker.png';
 // let contentWindow = document.getElementById('info-window').outerHTML;
-
+/*
 function initMap() {
   const map = new google.maps.Map(
       document.getElementById('map'),
@@ -206,7 +200,7 @@ function initMap() {
         center: thermalSprings,
       }
   );
-  /*const mapMarker = new google.maps.Marker({
+  const mapMarker = new google.maps.Marker({
     position: thermalSprings,
     map,
     icon: marker
@@ -216,5 +210,5 @@ function initMap() {
   });
   mapMarker.addListener("click", () => {
     infoWindow.open(map, mapMarker);
-  });*/
-}
+  });
+}*/
