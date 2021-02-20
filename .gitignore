@@ -1,0 +1,5 @@
+# Project exclude paths
+/Classworks/Frames-and-others/lesson-03-gulp/node_modules/
+/Classworks/Frames-and-others/lesson-04-webpack/node_modules/
+/Homeworks_Frames-and-others/Lesson-04-webpack/webpack-demo/dist/
+/Homeworks_Frames-and-others/Lesson-04-webpack/webpack-demo/node_modules/
