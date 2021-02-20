@@ -578,7 +578,7 @@ a {
 }
 @media screen and (max-width: 700px) {
   .nav__submenu--types {
-    overflow: auto;
+    overflow: scroll;
   }
 }
 .nav__submenu--types:hover, .nav__submenu--types:focus {
