@@ -379,8 +379,8 @@ a {
     display: none;
     position: fixed;
     margin: 0;
-    padding: 95px 50px 20px;
-    top: 68px;
+    padding: 32px 50px 20px;
+    top: 80px;
     left: 0;
     right: 0;
     width: 100vw;
@@ -412,6 +412,11 @@ a {
 @media screen and (max-width: 900px) {
   .nav__item {
     margin: 0 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .nav__item {
+    width: 100%;
   }
 }
 .nav__item:active {
