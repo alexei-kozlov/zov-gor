@@ -375,8 +375,8 @@ a {
     left: 0;
     right: 0;
     width: 100vw;
-    height: 100vh;
-    overflow: scroll;
+    height: calc(100vh - 68px);
+    overflow: auto;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
