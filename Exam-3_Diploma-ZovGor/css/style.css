@@ -251,18 +251,14 @@ a {
   }*/
 }
 .header__logo--sticky {
-  z-index: 5;
   min-width: 40px;
   height: 35px;
-  background: url("../img/desktop-logo--sticky.svg") no-repeat center/cover;
-  display: block;
+  background-image: url("../img/desktop-logo--sticky.svg");
 }
 .header__logo--mobile {
-  z-index: 5;
   min-width: 141px;
   height: 40px;
-  background: url("../img/mobile-logo.svg") no-repeat center/cover;
-  display: block;
+  background-image: url("../img/mobile-logo.svg");
 }
 .header__tel {
   display: block;
@@ -375,11 +371,11 @@ a {
     position: fixed;
     margin: 0;
     padding: 10px 50px 20px;
-    top: 60px;
+    top: 68px;
     left: 0;
     right: 0;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     overflow: scroll;
     flex-direction: column;
     justify-content: flex-start;
