@@ -15,7 +15,7 @@
       $('.nav__list').slideToggle(300).css('display', 'flex');
       $(this).fadeTo(100, .5).fadeTo(100, 1);
       $('.header').toggleClass('header--dark-bg');
-      $(window).off('scroll');
+      // $(window).unbind('scroll');
     });
 
     // Toggle mobile-menu after choose menu-item
