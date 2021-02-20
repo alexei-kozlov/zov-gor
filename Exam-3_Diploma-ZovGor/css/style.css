@@ -297,11 +297,17 @@ a {
 @media screen and (max-width: 700px) {
   .nav {
     min-height: 77px;
-    padding: 15px 0;
+    padding: 10px 0;
   }
 }
 .nav--sticky {
   min-height: 65px;
+  padding: 12px 0 15px;
+}
+@media screen and (max-width: 700px) {
+  .nav--sticky {
+    padding: 0;
+  }
 }
 .nav__btn-field {
   display: none;
@@ -569,6 +575,11 @@ a {
   width: 240px;
   height: 85vh;
   overflow: hidden;
+}
+@media screen and (max-width: 700px) {
+  .nav__submenu--types {
+    overflow: auto;
+  }
 }
 .nav__submenu--types:hover, .nav__submenu--types:focus {
   overflow: auto;
