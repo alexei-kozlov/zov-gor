@@ -348,9 +348,9 @@ a {
     min-height: 65px;
     padding: 12px 0 15px;
 
-    @media screen and (max-width: 700px) {
-      padding: 0;
-    }
+    //@media screen and (max-width: 700px) {
+    //  padding: 0;
+    //}
   }
 
   &__btn-field {
