@@ -117,7 +117,6 @@ a {
   letter-spacing: 0.2px;
   color: #f26c0d;
   cursor: pointer;
-  transition-duration: 0.3s;
 }
 @media screen and (max-width: 600px) {
   .text-button {
@@ -127,25 +126,28 @@ a {
   }
 }
 .text-button:hover, .text-button:focus {
-  color: #c2570a;
+  filter: brightness(80%);
 }
 .text-button:active {
-  color: #fac49e;
+  filter: opacity(50%);
 }
 
 .right-button {
-  font-size: 30px;
-  font-weight: 400;
-  padding: 0 5px;
+  width: 26px;
+  height: 20px;
+  margin: 0 0 2px 16px;
+  vertical-align: middle;
 }
 @media screen and (max-width: 600px) {
   .right-button {
-    font-size: 20px;
+    width: 18px;
+    height: 14px;
+    margin-left: 6px;
   }
 }
 
-.bold {
-  font-weight: 700;
+.down-button {
+  transform: rotate(90deg);
 }
 
 .social__item {
@@ -735,7 +737,7 @@ a {
 }
 @media screen and (max-width: 1024px) {
   .schedule__title, .schedule__text {
-    width: 39%;
+    width: 38%;
   }
 }
 @media screen and (max-width: 868px) {
@@ -745,10 +747,11 @@ a {
 }
 .schedule__link {
   width: 33%;
+  white-space: nowrap;
 }
 @media screen and (max-width: 1024px) {
   .schedule__link {
-    width: 22%;
+    width: 26%;
   }
 }
 @media screen and (max-width: 868px) {
@@ -1233,6 +1236,11 @@ a {
   color: #272625;
   width: 200px;
 }
+@media screen and (max-width: 600px) {
+  .reviews__title {
+    margin-bottom: 20px;
+  }
+}
 .reviews__link {
   text-align: right;
   width: 200px;
@@ -1379,9 +1387,14 @@ a {
   color: #272625;
   width: 400px;
 }
+@media screen and (max-width: 600px) {
+  .about__title {
+    margin-bottom: 20px;
+  }
+}
 .about__link {
   text-align: right;
-  width: 200px;
+  width: 210px;
 }
 @media screen and (max-width: 600px) {
   .about__link {
@@ -1481,7 +1494,6 @@ a {
 .gallery__link {
   text-align: right;
   align-self: flex-end;
-  vertical-align: middle;
 }
 @media screen and (max-width: 600px) {
   .gallery__link {
@@ -1715,6 +1727,11 @@ a {
 .help__title {
   color: #272625;
   width: 400px;
+}
+@media screen and (max-width: 600px) {
+  .help__title {
+    margin-bottom: 20px;
+  }
 }
 .help__link {
   text-align: right;

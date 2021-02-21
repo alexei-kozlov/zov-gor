@@ -127,7 +127,6 @@ a {
   letter-spacing: .2px;
   color: $primary-color;
   cursor: pointer;
-  transition-duration: .3s;
 
   @media screen and (max-width: 600px) {
     font-size: 15px;
@@ -137,28 +136,30 @@ a {
 
   &:hover,
   &:focus {
-    color: #c2570a;
+    filter: brightness(80%);
   }
 
   &:active {
-    color: #fac49e;
+    filter: opacity(50%);
   }
 }
 
 .right-button {
-  font-size: 30px;
-  font-weight: 400;
-  padding: 0 5px;
+  width: 26px;
+  height: 20px;
+  margin: 0 0 2px 16px;
+  vertical-align: middle;
 
   @media screen and (max-width: 600px) {
-    font-size: 20px;
+    width: 18px;
+    height: 14px;
+    margin-left: 6px;
   }
 }
 
-.bold {
-  font-weight: 700;
+.down-button {
+  transform: rotate(90deg);
 }
-
 
 // --------------- Social -------------------
 .social {
@@ -832,7 +833,7 @@ a {
     width: 33%;
 
     @media screen and (max-width: 1024px) {
-      width: 39%;
+      width: 38%;
     }
     @media screen and (max-width: 868px) {
       width: 100%;
@@ -841,8 +842,10 @@ a {
 
   &__link {
     width: 33%;
+    white-space: nowrap;
+
     @media screen and (max-width: 1024px) {
-      width: 22%;
+      width: 26%;
     }
     @media screen and (max-width: 868px) {
       width: 100%;
@@ -1343,6 +1346,10 @@ a {
   &__title {
     color: $primary-text-color;
     width: 200px;
+
+    @media screen and (max-width: 600px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__link {
@@ -1440,9 +1447,6 @@ a {
     margin-bottom: 10px;
     height: 300px;
     overflow: hidden;
-    //display: -webkit-box;
-    //-webkit-line-clamp: 9;
-    //-webkit-box-orient: vertical;
 
     &--full {
       height: auto;
@@ -1505,11 +1509,15 @@ a {
   &__title {
     color: $primary-text-color;
     width: 400px;
+
+    @media screen and (max-width: 600px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__link {
     text-align: right;
-    width: 200px;
+    width: 210px;
 
     @media screen and (max-width: 600px) {
       text-align: left;
@@ -1614,7 +1622,6 @@ a {
   &__link {
     text-align: right;
     align-self: flex-end;
-    vertical-align: middle;
 
     @media screen and (max-width: 600px) {
       text-align: left;
@@ -1859,6 +1866,10 @@ a {
   &__title {
     color: $primary-text-color;
     width: 400px;
+
+    @media screen and (max-width: 600px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__link {
