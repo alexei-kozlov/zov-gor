@@ -295,17 +295,21 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 12px 0 15px;
 }
 @media screen and (max-width: 700px) {
   .nav {
     min-height: 77px;
-    padding: 10px 0;
+    padding: 17px 0 20px;
   }
 }
 .nav--sticky {
   min-height: 65px;
-  padding: 12px 0 15px;
+}
+@media screen and (max-width: 700px) {
+  .nav--sticky {
+    padding: 7px 0 10px;
+  }
 }
 .nav__btn-field {
   display: none;
