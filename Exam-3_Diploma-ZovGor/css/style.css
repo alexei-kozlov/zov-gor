@@ -2455,7 +2455,7 @@ a {
 }
 @media screen and (max-width: 1024px) {
   .route__sidebar-main {
-    padding: 10px 0 0 10px;
+    padding: 0 10px;
     border: none;
   }
 }
@@ -2558,8 +2558,8 @@ a {
 }
 @media screen and (max-width: 425px) {
   .route__modal-list {
-    width: 280px;
-    left: -68%;
+    width: 281px;
+    left: -67%;
   }
 }
 .route__modal-phone {
@@ -2779,13 +2779,11 @@ a {
   }
 }
 .route__sidebar-share {
-  width: 88%;
   margin: 20px 30px 0;
 }
 @media screen and (max-width: 1024px) {
   .route__sidebar-share {
-    width: 100%;
-    margin: 15px 0 0;
+    margin: 15px 10px 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2800,7 +2798,6 @@ a {
 .route__share-list {
   width: 100%;
   display: flex;
-  flex-grow: 1;
   flex-wrap: wrap;
 }
 .route__share-item {
@@ -2810,7 +2807,13 @@ a {
 }
 @media screen and (max-width: 1024px) {
   .route__share-item {
-    width: 69px;
+    width: 60px;
+    flex-grow: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .route__share-item {
+    width: 68px;
   }
 }
 .route__share-link {

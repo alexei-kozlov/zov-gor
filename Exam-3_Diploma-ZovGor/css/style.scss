@@ -2678,7 +2678,7 @@ a {
     border-radius: 5px;
 
     @media screen and (max-width: 1024px) {
-      padding: 10px 0 0 10px;
+      padding: 0 10px;
       border: none;
     }
 
@@ -2793,8 +2793,8 @@ a {
       left: -22%;
     }
     @media screen and (max-width: 425px) {
-      width: 280px;
-      left: -68%;
+      width: 281px;
+      left: -67%;
     }
   }
 
@@ -3054,12 +3054,10 @@ a {
   }
 
   &__sidebar-share {
-    width: 88%;
     margin: 20px 30px 0;
 
     @media screen and (max-width: 1024px) {
-      width: 100%;
-      margin: 15px 0 0;
+      margin: 15px 10px 0;
     }
 
     @media screen and (max-width: 768px) {
@@ -3075,7 +3073,6 @@ a {
   &__share-list {
     width: 100%;
     display: flex;
-    flex-grow: 1;
     flex-wrap: wrap;
   }
 
@@ -3085,7 +3082,11 @@ a {
     margin-top: 5px;
 
     @media screen and (max-width: 1024px) {
-      width: 69px;
+      width: 60px;
+      flex-grow: 1;
+    }
+    @media screen and (max-width: 768px) {
+      width: 68px;
     }
   }
 
