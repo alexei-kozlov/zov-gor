@@ -730,6 +730,7 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 20px;
 
     @media screen and (max-width: 600px) {
       flex-direction: column;
@@ -750,7 +751,7 @@ a {
   .routes__item-marker--recommend {
     position: static;
     display: inline-block;
-    margin-right: 20px;
+    margin: 0 20px 10px 0;
     width: 155px;
     height: 40px;
     padding: 5px;
@@ -767,10 +768,15 @@ a {
   }
 
   .routes__type {
+    margin-bottom: 10px;
+
     @media screen and (max-width: 868px) {
       font-size: 15px;
       line-height: 20px;
       letter-spacing: .1px;
+    }
+    @media screen and (max-width: 600px) {
+      margin-bottom: 0;
     }
   }
 
@@ -3342,6 +3348,13 @@ a {
       flex-direction: column;
       justify-content: flex-start;
     }
+  }
+
+  &__logo {
+    display: block;
+    min-width: 72px;
+    height: 70px;
+    background: url('../img/footer-logo.svg') no-repeat center / cover;
   }
 
   &__bottom-text {
