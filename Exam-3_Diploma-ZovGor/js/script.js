@@ -109,7 +109,6 @@
         $('.route__sidebar').append($('.route__sidebar-bottom'));
       }
     }
-
     mediaSize();
     window.addEventListener('resize', mediaSize, false);
 
