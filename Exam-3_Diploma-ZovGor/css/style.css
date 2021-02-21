@@ -15,8 +15,10 @@ html {
 
 body {
   min-width: 320px;
-  font-weight: 400;
+  font-family: Manrope, Arial, sans-serif;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 30px;
   color: #fff;
   background-blend-mode: multiply;
@@ -2313,7 +2315,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .route__instructor-name--total-cost, .route__direction--total-cost, .route__text--total-cost, .route__list--total-cost, .route__gallery--total-cost, .route__map--total-cost {
-    margin-bottom: 50px;
+    margin: -40px 0 50px;
   }
 }
 .route__instructor-name:last-child, .route__direction:last-child, .route__text:last-child, .route__list:last-child, .route__gallery:last-child, .route__map:last-child {
