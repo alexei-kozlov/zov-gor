@@ -17,7 +17,7 @@
     });
 
     // Toggle mobile-menu after choose menu-item
-    $('.nav__list li').on('click', function () {
+    $('.nav__item--schedule, .nav__item--reviews, .nav__item--help, .nav__item--about, .nav__place-item, .nav__submenu--type').on('click', function () {
       if (window.matchMedia('(max-width: 700px)').matches) {
         $('.nav__btn-icon').toggleClass('nav__btn-icon--active');
         $('.nav__list').slideToggle(300).css('display', 'none');
