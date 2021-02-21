@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
 @import url("normalize.css");
 @import url("fonts.css");
+@import url("flags.css");
 * {
   margin: 0;
   padding: 0;
@@ -567,9 +568,10 @@ a {
   color: #f26c0d;
 }
 .nav__place-icon {
-  vertical-align: middle;
   border-radius: 2px;
   margin: 0 10px 2px 0;
+  width: 20px;
+  height: 15px;
 }
 .nav__submenu--types {
   background-color: #fff;
@@ -2978,7 +2980,7 @@ a {
 }
 @media screen and (max-width: 600px) {
   .footer__routes-list {
-    height: 420px;
+    height: 450px;
     overflow: auto;
   }
 }
@@ -3029,9 +3031,10 @@ a {
   padding: 1px 0;
 }
 .footer__routes-icon {
-  vertical-align: middle;
   border-radius: 2px;
   margin: 0 10px 2px 0;
+  width: 20px;
+  height: 15px;
 }
 .footer__nav-item {
   width: 100%;

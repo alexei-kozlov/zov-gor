@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
 @import url("normalize.css");
 @import url("fonts.css");
+@import url("flags.css");
 
 $primary-text-color: #272625;
 $secondary-text-color: #fff;
@@ -650,9 +651,10 @@ a {
   }
 
   &__place-icon {
-    vertical-align: middle;
     border-radius: 2px;
     margin: 0 10px 2px 0;
+    width: 20px;
+    height: 15px;
   }
 
   &__submenu--types {
@@ -3270,7 +3272,7 @@ a {
     flex-wrap: wrap;
 
     @media screen and (max-width: 600px) {
-      height: 420px;
+      height: 450px;
       overflow: auto;
     }
   }
@@ -3324,9 +3326,10 @@ a {
   }
 
   &__routes-icon {
-    vertical-align: middle;
     border-radius: 2px;
     margin: 0 10px 2px 0;
+    width: 20px;
+    height: 15px;
   }
 
   &__nav-item {
