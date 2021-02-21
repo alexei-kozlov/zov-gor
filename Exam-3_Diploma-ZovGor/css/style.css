@@ -2095,7 +2095,7 @@ a {
 }
 @media screen and (max-width: 1024px) {
   .route__tabs {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     flex-direction: column;
     align-items: flex-start;
   }
