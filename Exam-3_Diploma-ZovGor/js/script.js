@@ -18,9 +18,11 @@
 
     // Toggle mobile-menu after choose menu-item
     $('.nav__list li').on('click', function () {
-      $('.nav__btn-icon').toggleClass('nav__btn-icon--active');
-      $('.nav__list').slideToggle(300).css('display', 'none');
-      $('.header').toggleClass('header--dark-bg');
+      if (window.matchMedia('(max-width: 700px)').matches) {
+        $('.nav__btn-icon').toggleClass('nav__btn-icon--active');
+        $('.nav__list').slideToggle(300).css('display', 'none');
+        $('.header').toggleClass('header--dark-bg');
+      }
     });
 
     // Menu & submenu PLACES work

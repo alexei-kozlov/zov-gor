@@ -1119,6 +1119,12 @@ a {
   line-height: 20px;
   text-align: left;
 }
+@media screen and (max-width: 600px) {
+  .routes__difficulty {
+    opacity: 0;
+    width: 0;
+  }
+}
 .routes__type-icon {
   vertical-align: middle;
   filter: invert(100%);
@@ -1150,6 +1156,11 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 600px) {
+  .routes__bottom {
+    flex-direction: row-reverse;
+  }
+}
 .routes__difficulty-value {
   display: inline-block;
   width: 120px;
@@ -1169,6 +1180,13 @@ a {
   line-height: 36px;
   letter-spacing: 0.2px;
   text-align: right;
+}
+@media screen and (max-width: 600px) {
+  .routes__price-value {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+  }
 }
 .routes__price-value::before {
   content: "";
@@ -2003,7 +2021,7 @@ a {
   letter-spacing: 0.2px;
   white-space: nowrap;
   padding: 0 4px;
-  font-size: 19px;
+  font-size: 18px;
   color: transparent;
 }
 .travels__type, .travels__term, .travels__country {
@@ -2631,7 +2649,7 @@ a {
 }
 .route__sidebar-mount {
   background: linear-gradient(90deg, #272625 40%, #d1cbc7 40%);
-  font-size: 19px;
+  font-size: 18px;
   color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;

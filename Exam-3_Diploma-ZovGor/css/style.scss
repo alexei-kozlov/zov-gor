@@ -1224,6 +1224,13 @@ a {
     text-align: left;
   }
 
+  &__difficulty {
+    @media screen and (max-width: 600px) {
+      opacity: 0;
+      width: 0;
+    }
+  }
+
   &__type-icon {
     vertical-align: middle;
     filter: invert(100%);
@@ -1258,6 +1265,10 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: row-reverse;
+    }
   }
 
   &__difficulty-value {
@@ -1280,6 +1291,12 @@ a {
     line-height: 36px;
     letter-spacing: .2px;
     text-align: right;
+
+    @media screen and (max-width: 600px) {
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: .1px;
+    }
 
     &::before {
       content: '';
@@ -2177,7 +2194,7 @@ a {
     letter-spacing: 0.2px;
     white-space: nowrap;
     padding: 0 4px;
-    font-size: 19px;
+    font-size: 18px;
     color: transparent;
   }
 
@@ -2892,7 +2909,7 @@ a {
     background: linear-gradient(90deg,
             #272625 40%,
             #d1cbc7 40%);
-    font-size: 19px;
+    font-size: 18px;
     color: transparent;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
