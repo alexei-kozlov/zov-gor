@@ -207,9 +207,6 @@
 const thermalSprings = {lat: 43.38359927774014, lng: 42.36117805779969};
 // const elbrus = {lat: 43.3499363, lng: 42.4278205};
 // const khurzuk = {lat: 43.3499363, lng: 42.4278205};
-const marker = 'img/map-marker.png';
-let contentWindow = document.getElementById('info-window').outerHTML;
-
 function initMap() {
   const map = new google.maps.Map(
       document.getElementById('map'),
@@ -218,6 +215,14 @@ function initMap() {
         center: thermalSprings,
       }
   );
+  new google.maps.Marker({
+    position: thermalSprings,
+    map,
+    title: "Термальные источники",
+  });
+  /*
+  const marker = 'img/map-marker.png';
+let contentWindow = document.getElementById('info-window').outerHTML;
   const mapMarker = new google.maps.Marker({
     position: thermalSprings,
     map,
@@ -229,4 +234,5 @@ function initMap() {
   mapMarker.addListener("click", () => {
     infoWindow.open(map, mapMarker);
   });
+  */
 }
