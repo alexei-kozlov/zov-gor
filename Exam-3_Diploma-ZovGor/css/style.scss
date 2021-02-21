@@ -443,6 +443,18 @@ a {
       z-index: 5;
       background-color: $primary-text-color;
     }
+
+    //&--active {
+    //  @media screen and (max-width: 700px) {
+    //    display: flex;
+    //  }
+    //}
+    //
+    //&--closed {
+    //  @media screen and (max-width: 700px) {
+    //    display: none;
+    //  }
+    //}
   }
 
   &__item {

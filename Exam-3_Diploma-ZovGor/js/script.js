@@ -92,9 +92,16 @@
     //Move aside after resize window
     function mediaSize() {
       if (window.matchMedia('(max-width: 700px)').matches) {
-        $('.nav__list').hide();
+        if ($('.nav__list').css('display') !== ('flex')) {
+          $('.nav__list').hide();
+        }
+        else {
+          $('.nav__list').show();
+          $('.header').addClass('header--dark-bg');
+        }
         $('.header__logo').addClass('header__logo--mobile');
       } else {
+        $('.header').removeClass('header--dark-bg');
         $('.nav__list').show();
         $('.header__logo').removeClass('header__logo--mobile');
       }
@@ -109,6 +116,7 @@
         $('.route__sidebar').append($('.route__sidebar-bottom'));
       }
     }
+
     mediaSize();
     window.addEventListener('resize', mediaSize, false);
 
@@ -116,10 +124,12 @@
     let regex = {
       email: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     }
+
     function validateField(val, fieldName) {
       let pattern = regex[fieldName];
       return pattern.test(val);
     }
+
     $('#form').on('submit', function (e) {
       e.preventDefault();
       e.stopPropagation();
