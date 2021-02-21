@@ -1128,12 +1128,6 @@ a {
   line-height: 20px;
   text-align: left;
 }
-@media screen and (max-width: 600px) {
-  .routes__difficulty {
-    opacity: 0;
-    width: 0;
-  }
-}
 .routes__type-icon {
   vertical-align: middle;
   filter: invert(100%);
@@ -1167,7 +1161,13 @@ a {
 }
 @media screen and (max-width: 600px) {
   .routes__bottom {
-    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 600px) {
+  .routes__difficulty {
+    opacity: 0;
+    width: 0;
   }
 }
 .routes__difficulty-value {

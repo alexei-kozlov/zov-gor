@@ -1230,13 +1230,6 @@ a {
     text-align: left;
   }
 
-  &__difficulty {
-    @media screen and (max-width: 600px) {
-      opacity: 0;
-      width: 0;
-    }
-  }
-
   &__type-icon {
     vertical-align: middle;
     filter: invert(100%);
@@ -1273,7 +1266,14 @@ a {
     align-items: center;
 
     @media screen and (max-width: 600px) {
-      flex-direction: row-reverse;
+      justify-content: flex-start;
+    }
+  }
+
+  &__difficulty {
+    @media screen and (max-width: 600px) {
+      opacity: 0;
+      width: 0;
     }
   }
 
