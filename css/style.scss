@@ -8,23 +8,6 @@ $secondary-text-color: #fff;
 $primary-color: #f26c0d;
 $secondary-color: #6a6562;
 
-@mixin medium-text {
-  font: {
-    family: Manrope, Arial, sans-serif;
-    size: 18px;
-    style: normal;
-    weight: 400;
-  }
-  line-height: 30px;
-}
-//font-family: Manrope, Arial, sans-serif;
-//font-size: 18px;
-//font-style: normal;
-//font-weight: 400;
-//line-height: 30px;
-
-//@include medium-text;
-
 * {
   margin: 0;
   padding: 0;
